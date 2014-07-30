@@ -1,0 +1,998 @@
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+/* Section #BD Override */
+#bd {padding: 20px 0 0 40px;}
+ 
+.backBtn {margin-left: -20px;}
+ 
+/* Header Nav Styles */
+.no-touch #topLeftNav a.btnHeader1:hover, .no-touch #topLeftNav a.btnHeader2:hover, .no-touch #topLeftNav a.btnHeader3:hover, .no-touch #topLeftNav a.btnHeader4:hover, .no-touch #topLeftNav a.btnHeader5:hover { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaebec', endColorstr='#cbcccc'); /* for IE */     background: -webkit-gradient(linear, left top, left bottom, from(#eaebec), to(#cbcccc)); /* for webkit browsers */  background: -moz-linear-gradient(top,  #eaebec,  #cbcccc); /* for firefox 3.6+ */}
+ 
+ 
+/* Header menu on state */
+#tireDetails header .btnHeader3 {position: relative;}
+ 
+#tireDetails header .btnHeader3 {background-color: #EAEBEC; background-image: -webkit-gradient(linear, left top, left bottom, from(#EAEBEC), to(#cecece)); background-image: -webkit-linear-gradient(top, #EAEBEC, #cecece); background-image: -moz-linear-gradient(top, #EAEBEC, #cecece); background-image: -o-linear-gradient(top, #EAEBEC, #cecece); background-image: linear-gradient(to bottom, #EAEBEC, #cecece); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaebec', endColorstr='#cbcccc');}
+ 
+#tireDetails header .btnHeader3 hr {display: block; background-color: #e71a11; height: 4px; width: 116px; padding: 0; margin: 0; position: absolute; right: 0px; bottom: 0px;}
+ 
+#tireDetails.fr header .btnHeader3 hr {width: 150px;}
+ 
+#tireDetails.es header .btnHeader3 hr {width: 155px;}
+ 
+.lt-ie9 .utilityExpander .dropDown {background-color: #b1b1b1; color:#000;}
+ 
+ 
+/* Product Intro Section */
+#productIntro{position:relative; top:0; left:0; width:1060px; height:489px; margin: 0 0 15px 0; background-image:url("/etc/designs/bst/clientlibs/legacy/img/tireDetails/introBG.jpg"); background-position:bottom; background-repeat:no-repeat;}
+     
+#productIntro h1{position:absolute; top:0; left:0; font-size: 0.9em;  font-weight:normal; line-height:2.2em; z-index:90; margin: 0; letter-spacing: 1px;}
+ 
+#productIntro em{font-size: 3.4em; font-style:normal;}
+ 
+#productIntro .photoMenu{width:69px; height:45px; cursor:pointer;}
+ 
+#productIntro .photoMenu img{float:left; -moz-box-shadow:1px 1px 3px #7f7f7f; -webkit-box-shadow:1px 1px 3px #7f7f7f;   box-shadow:1px 1px 3px #7f7f7f; width:60px; height:40px;}
+ 
+#productIntro #photoMenu3 .arrow {border: none;margin-top: -32px;}
+ 
+#productIntro .photoMenu img.arrow{float:right !important; margin-right: -2px; margin-top: 14px; -moz-box-shadow:none !important; -webkit-box-shadow:none !important; box-shadow:none !important; display:none; width:11px; height:21px;}
+ 
+ 
+.viewer {
+    padding-left: 150px;
+    padding-top: 40px;
+
+} 
+/* Photo Menu */
+#photoMenuWrap {position: absolute; top: 197px;}
+ 
+#photoMenu1{position:absolute; left:20px; top:0px; z-index:80;}
+ 
+#photoMenu2{position:relative; left:20px; top:52px; z-index:80;}
+ 
+#photoMenu3{position:relative; left:20px; top:58px; z-index:80;}
+ 
+#photoMenu4{position:relative; left:20px; top:65px; z-index:80;}
+ 
+#productIntro .tireDetail.default{position:absolute; left:0; bottom:0;}
+ 
+#productIntro .tireDetail.trio{position:absolute; left:115px; bottom:0; display:none;}
+ 
+#productIntro .tireDetail.tread{position:absolute; left:115px; bottom:0; display:none;}
+ 
+#tire360 {position:absolute; bottom:26px; left:205px; background-position: -25489px 0; height:384px; width: 358px; display:none; cursor:pointer; z-index:80;}
+ 
+#swipe-arrow {display: none; position: absolute; top: 256px; left: 138px;}
+ 
+#swipe-arrow + span {display: none; color: #a0a1a3; font-size: 10px; position: absolute; top: 295px; left: 130px;}
+ 
+ 
+/* Right-side details section */
+#productDetails{position:absolute; top:124px; min-height:230px; right:20px; width:400px; text-align:right;}
+ 
+.warmState #productDetails{top:74px;}
+ 
+#productDetails h2{font-family: "Helvetica",sans-serif; font-size: 1.7em; font-weight: normal; margin: 0 0 0px 0; text-transform: none;}
+ 
+#productDetails em{font-style:normal; color:#626262; font-size: 1em !important;}
+ 
+#productDetails p{color: #000000; float: right; font-family: "Helvetica",sans-serif; font-size: 0.74em; line-height: 1.7em; width: 380px; margin: 3px 0 25px 0;}
+ 
+.warmState #productDetails p{margin-bottom: 10px;}
+ 
+#sendTo{float:right; height:24px; width: 350px; font-family: "Helvetica",sans-serif; font-size: 0.6em; color: #000000; text-align:left; margin-top: 15px; overflow: hidden;}
+ 
+#sendTo input{float:right; border:none; padding:0; margin:-13px 0 0 10px; height:25px; width:26px; text-indent:100px; cursor:pointer;}
+ 
+#sendTo .sendPhone {float: right; padding: 6px 10px; font-size: 12px; font-weight: bold; color: #fff; text-transform: uppercase; background-color: #6177b5; cursor: pointer;}
+ 
+.ie #sendTo .sendPhone {padding: 5px 10px;}
+ 
+.lt-ie9 #sendTo .sendPhone {padding: 4px 10px;}
+ 
+#sendTo abbr{float: right; color: #B2B2B2; font-size: 4em; margin-right: -6px; line-height: 0.7; cursor:pointer;}
+ 
+.lt-ie8 #sendTo abbr {line-height: 35px;}
+ 
+#sendTo abbr.btnPhone {margin-left: -10px;}
+ 
+.ie #sendTo abbr.btnPhone {position: relative; top: -1px;}
+ 
+#btnInstaller {float:none; color:#fff; font-family: "Helvetica",sans-serif; font-size: 12px; text-align:center; text-transform:uppercase; -moz-box-shadow:2px 2px 4px #ededed; -webkit-box-shadow:2px 2px 4px #ededed; box-shadow:2px 2px 4px #ededed; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a9e5', endColorstr='#00a3dc'); /* for IE */     background-color: -webkit-gradient(linear, left top, left bottom, from(#00a9e5), to(#00a3dc)); /* for webkit browsers */    background-color: -moz-linear-gradient(top,  #00a9e5,  #00a3dc); /* for firefox 3.6+ */ }
+ 
+.no-touch #btnInstaller:hover {filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#40bfec', EndColorStr='#08ace6');}
+ 
+.lt-ie8 #btnInstaller {margin-top:10px;}
+ 
+ 
+/* Find installer Modal */
+#installerModal {height: 182px; min-height: 182px;}
+ 
+.ca #installerModal{ min-width: 650px; max-width: 650px;}
+ 
+#installerModal .loading {position: absolute; left: 438px; top: 93px;}
+ 
+.lt-ie9 #installerModal .loading {top: 105px;}
+ 
+#installerSearch input {border: thin solid #BCBDBE; color: #939598; font-family: "Helvetica",sans-serif; font-size: 1em; height: 18px; padding: 9px 16px; width: 423px;}
+ 
+#installerSearch button {margin-left: 17px; font-size: 14px; font-weight: bold; text-transform: uppercase; text-align: left;}
+ 
+#installerSearch button abbr {font-size: 1.3em; margin-left: 10px;}
+ 
+#installerModal h2 {padding-bottom: 25px;}
+ 
+.es #installerModal h2 {font-size: 1.9em;}
+ 
+.fr #installerModal h2 {font-size: 1.8em;}
+ 
+#installerSearch .btnLocationSearch {height:28px; width:68px; background-color:#00a5df; color:#FFF; font-family: "Helvetica",sans-serif; font-size: 14px; border:none; padding:3px 0 0 10px; -moz-box-shadow:0 2px 1px #BDBDBD; -webkit-box-shadow:0 2px 1px #BDBDBD;   box-shadow:0 2px 1px #BDBDBD;}
+ 
+.fr #installerSearch .btnLocationSearch {width: 94px;}
+ 
+#installerLocation .currentLocation {padding-top: 16px; display: block; color: #4d4d4f; cursor: pointer; font-family: "Helvetica",sans-serif; font-size: 14px;}
+ 
+#installerLocation .currentLocation label {display: inline-block; vertical-align: middle;}
+ 
+#installerSearch input[type="checkbox"] {
+    height: 12px;
+    width: 12px;
+    background: url('/etc/designs/bst/clientlibs/legacy/img/checkbox-off.png') no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+ 
+#installerSearch input[type="checkbox"]:checked {
+    background: url('/etc/designs/bst/clientlibs/legacy/img/checkbox-on.png') no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+ 
+#priceBox{position:absolute; bottom:4px; right:0;}
+ 
+/*.lt-ie9 #perTire{width:110px;}*/
+ 
+.lt-ie9 .stockDetails{padding-top:7px;}
+ 
+#priceBox > div{float:right; height:120px; text-align:right;}
+ 
+.warmState #priceBox > div{height: 90px;}
+ 
+#priceBox .warrantyMiles{border-right:thin solid #c2c2c2; color:#333333; font-family: "Helvetica",sans-serif; font-size: 0.6em; font-weight:bold; line-height:1.5em; padding:33px 15px 0 0; height:87px;}
+ 
+.warmState #priceBox .warrantyMiles{height: 57px;}
+ 
+#priceBox .warrantyMiles small {display: block; font-size: 11px; line-height: 23px;}
+ 
+#priceBox .warrantyMiles span{font-family:"alternate-gothic-no-3-d",sans-serif; font-size:3.5em; font-weight:normal;}
+ 
+#priceBox .stockDetails{padding:0 25px; line-height: .7em;}
+ 
+#priceBox .stockDetails .sku{font-family: "Helvetica",sans-serif; font-size: 0.6em; font-weight:bold; color:#8a8a8a;}
+ 
+#priceBox #fourTire .price, #priceBox #perTire .price{font-family:"alternate-gothic-no-3-d",sans-serif; font-size:2.1em; line-height:1.2em;}
+ 
+#priceBox .stockDetails .price .sup,
+#priceBox .stockDetails .price sup {float: left; font-size: 0.6em !important; margin-top: -4px; margin-right:5px; line-height:1.6em; top:auto; }
+ 
+.lt-ie9 #priceBox .stockDetails .price sup {margin-top:0;}
+ 
+#fourTire{display:none;}
+ 
+#priceBox .priceOptions{font-family: "Helvetica",sans-serif; font-size: 0.7em; color: #c2c2c2; line-height:1.5em; margin-top:-4px;}
+ 
+.lt-ie9 #priceBox .priceOptions{ font-size: 0.7em;}
+ 
+#priceBox .priceOptions span{text-decoration:none; color:#00A9E5; cursor:pointer;}
+ 
+#priceBox .priceOptions span.current{color:#000;}
+ 
+.rearInfo{display:none;}
+ 
+ 
+.addthis_toolbox{float:right;}
+ 
+.tip .tooltip { width:725px; margin:8px 0 0 30px; font-size:0.8em; right: 41px; left: auto !important;}
+ 
+.fr .tip .tooltip {width: 945px;}
+ 
+.es .tip .tooltip {width: 985px;}
+ 
+.tip em{font-style:normal; text-decoration:underline; color:#0000FF;}
+ 
+ 
+/* Filters */
+#filterByVehicle {position:absolute; top:0; left:150px; width:630px;}
+ 
+#vehicleFilter {float:left; clear:left; position:relative; top:0; left:0; overflow:hidden; width:770px; height:115px; background-color:#007876; color:#fff;}
+ 
+#vehicleFilter h2 {position:absolute; bottom:20px; left:20px;}
+ 
+#vehicleFilter .option {float:left; width:110px; height:60px; padding:25px 0; margin:33px 0; text-align:center; border-right:thin solid #fff; }
+ 
+#vehicleFilter .option a {font-family: "Helvetica",sans-serif; font-size: 0.7em; color:#fff; text-decoration:underline; text-transform:uppercase;}
+ 
+#vehicleFilter .option .select {display:none;}
+ 
+.filters #submit {-moz-box-shadow:2px 2px 4px #00706e; -webkit-box-shadow:2px 2px 4px #00706e;  box-shadow:2px 2px 4px #00706e; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#018d8b', endColorstr='#018c8a'); /* for IE */    background: -webkit-gradient(linear, left top, left bottom, from(#018d8b), to(#018c8a)); /* for webkit browsers */  background: -moz-linear-gradient(top,  #018d8b,  #018c8a); /* for firefox 3.6+ */ }
+ 
+#or1{float: left;  left: -9px;  margin: 55px 0 0;  position: relative; z-index: 100;}
+ 
+#sizeFilter{float:left; position:relative; top:0; left:-17px; z-index:90px; overflow:hidden; width:145px; height:90px; margin-top:25px; background-color:#00b0ad; color:#fff;}
+ 
+#sizeFilter h2{position:absolute; bottom:2px; left:20px;}
+ 
+#filterBySize{position:absolute; top:0; left:260px; width:630px;}
+ 
+#sizeFilter .option{float:left; width:110px; height:60px; padding:25px 0; margin:33px 0; text-align:center; border-right:thin solid #fff; }
+ 
+#sizeFilter .option a{font-family: "Helvetica",sans-serif; font-size: 0.7em; color:#fff; text-decoration:underline; text-transform:uppercase;}
+ 
+/*#sizeFilter .option .select{display:none;}
+ 
+#sizeFilter select { border:0; font-size:0.6em; width:100px; -webkit-appearance: none; color:#000; font-family: "Helvetica",sans-serif; text-transform:uppercase;}*/
+ 
+#sizeFilter #submit{-moz-box-shadow:2px 2px 4px #5abeb8; -webkit-box-shadow:2px 2px 4px #5abeb8; box-shadow:2px 2px 4px #5abeb8; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68d1cb', endColorstr='#02b6b3'); /* for IE */   background: -webkit-gradient(linear, left top, left bottom, from(#68d1cb), to(#02b6b3)); /* for webkit browsers */  background: -moz-linear-gradient(top,  #68d1cb,  #02b6b3); /* for firefox 3.6+ */ }
+ 
+#or2{float: left;  left: -26px;  margin: 55px 0 0;  position: relative; z-index: 100;}
+ 
+.btnSubmit{width:70px; height:22px; color:#fff; border:none; padding:3px 0 0 0; margin:37px 0 0 25px; font-family: "Helvetica",sans-serif; font-size: 0.7em; text-align:center; text-transform:uppercase;}
+ 
+#tireFilter{position:relative; top:25px; float:left; height:89px; width:124px; margin-top:26px; background-color:#00b0ad;}
+ 
+ 
+/* Expanding Boxes */
+#productDetailsExpanded{width:790px; float:left;}
+ 
+#productDetailsExpanded h2{font-size: 1.2em; font-weight: normal; color:#000; margin: 10px 0 4px; float:left;}
+ 
+#productDetailsExpanded #additionalDetails {float:left; font-family: "Helvetica",sans-serif; font-size: 0.6em; margin:19px 0 0 10px;}
+ 
+#productDetailsExpanded #additionalDetails span {text-decoration:none; color:#00a9e5; cursor:pointer;}
+ 
+.no-touch #productDetailsExpanded #additionalDetails span:hover {text-decoration: underline;}
+ 
+#productDetailsExpanded > .expander {width:790px; height:200px; position:relative; overflow:hidden; top:0; left:0; background-color:#f1f2f2; margin-bottom:25px; clear:left;}
+#moreRatings { height: auto; overflow: auto; background-color: #f1f1f1; margin-bottom: 25px; position: relative; }
+ 
+#productDetailsExpanded .expander h3 {font-size: 1.7em; font-weight: normal; left: 20px; line-height: 1em; position: absolute; top: 32px; width:170px;}
+ 
+.fr #productDetailsExpanded .expander h3, .es #productDetailsExpanded .expander h3 {display: block; width: 195px;}
+ 
+.lt-ie8 #productDetailsExpanded .expander h3 {top:52px;}
+ 
+#productDetailsExpanded .expander h3 a {color: #000000;}
+ 
+#productDetailsExpanded .expander a {text-decoration:none;}
+ 
+#productDetailsExpanded .expander .plus {position:absolute; left:15px; top:12px; font-size:2em; line-height:1em; color:#808080;}
+ 
+#productDetailsExpanded .countDebug {position:absolute; top:5px; right:5px; font-family: "Helvetica",sans-serif; font-size: 0.7em;}
+ 
+#productDetailsExpanded .expander .viewAll{position:absolute; left:20px; top:168px; font-family: "Helvetica",sans-serif; font-size: 0.7em; text-decoration:none; color:#00a9e5;}
+ 
+.no-touch #productDetailsExpanded .expander .viewAll:hover {text-decoration: underline;}
+ 
+#productDetailsExpanded .expander .contentBoxes{position:absolute; left:200px; top:60px;}
+ 
+#productDetailsExpanded .expander .contentBoxes div{height:140px; width:175px; padding:0 0 0 20px; float:left; border-left:thin solid #c1c2c2;}
+ 
+#productDetailsExpanded .expander .contentExpanded{display:none;}
+ 
+.btnExpand{cursor:pointer; height: 200px; width: 100%}
+ 
+#productDetailsExpanded .expander .legal {font-family: "Helvetica",sans-serif; font-size: 0.7em; text-decoration:none; color:#888; width: 550px; line-height: 16px; }
+ 
+.no-js #productDetailsExpanded .expander .plus{display:none;}
+ 
+.no-js #productDetailsExpanded .expander .viewAll{display:none;}
+ 
+.no-js #productDetailsExpanded > .expander{overflow:hidden; height:auto; display:block; position:static; float:left; margin:0 0 25px 0;}
+ 
+.no-js #productDetailsExpanded .expander .contentExpanded{display:block; position:static; float:left;}
+ 
+.no-js #productDetailsExpanded .expander .contentBoxes{position:static; float:left; margin:20px 0 0 25px;}
+ 
+.no-js #productDetailsExpanded .expander h3{position:static; float:left;}
+ 
+ 
+#specs .contentBoxes div {font-family:"alternate-gothic-no-3-d",sans-serif; text-transform:uppercase; font-size:0.9em; color:#000;}
+ 
+#specs .contentBoxes div h4 {font-weight:normal; font-size:3em; color:#3e4d79; margin:0px;}
+ 
+#specs .contentExpanded {position:absolute; top:200px; left:0;}
+ 
+#specs .contentExpanded table th { background-image: url("/etc/designs/bst/clientlibs/legacy/img/tireDetails/tableHeaderBG.jpg"); background-repeat:repeat-x; background-color:#d1d3d4; border-left:thin solid #b2b4b4; color: #4D4D4F; font-family: "alternate-gothic-no-3-d",sans-serif; font-size: 0.8em; font-weight: normal;  line-height: 1em; text-align: left; text-transform: uppercase; padding:13px 0 0 8px;}
+ 
+#specs .contentExpanded td {height:38px; font-family: "Helvetica",sans-serif; font-size: 0.7em;  padding:13px 0 0 0; border-left:thin solid #b2b4b4; padding:12px 0 0 8px;}
+ 
+#specs .contentExpanded .firstColumn {border-left:none !important;}
+ 
+#specs .contentExpanded tr {background-color:#f9fafa;}
+ 
+#specs .contentExpanded tr.odd {background-color:#f1f2f2;}
+ 
+#specs .contentExpanded tr.highlightedRow {background-color:#d1d3d4; font-weight:bold; color:#4d4d4f;}
+ 
+#specs .specDatarear {display:none;}
+ 
+#specs .infoIcon {color: #00a9e5; cursor: pointer; display: block !important; position:absolute; top:97px; left:124px; font-size: 1.5em; height: 23px; line-height: 0.9em; width: 20px;}
+ 
+#sizesToggle {font-size: 0.7em; font-weight: bold; left: 20px; line-height: 1.5em; position: absolute; top: 100px;}
+ 
+#sizesToggle .off {cursor:pointer; color: #00a9e5; font-weight:normal;}
+ 
+#fullExpand {width:100%; padding:8px 0 4px 15px; display:none; position:absolute; bottom:0; left:0; height:20px; background-color:#f1f2f2; font-family: "Helvetica",sans-serif; font-size: 0.7em; text-decoration:none; color:#00a9e5; cursor: pointer;}
+ 
+.no-touch #fullExpand:hover {text-decoration: underline;}
+ 
+#specs.coldState { height:auto; }
+ 
+#specs.coldState .btnExpand { display:none; }
+ 
+#specs.coldState .contentExpanded { position:static; }
+ 
+ 
+#performance .contentBoxes div{font-family:"alternate-gothic-no-3-d",sans-serif; text-transform:uppercase; font-size:0.9em; color:#000;}
+  
+#performance .contentBoxes div h4{font-weight:normal; font-size:1.4em;  margin:0; color:#fcb033;}
+ 
+#performance .contentBoxes div abbr{color:#fcb033; font-size:7em; line-height:0.6em; margin-left: -30px;}
+ 
+#performance .contentBoxes div+div h4, #performance .contentBoxes div+div abbr{color:#54202d;}
+ 
+#performance .contentBoxes div+div+div h4, #performance .contentBoxes div+div+div abbr{color:#077c8a;}
+ 
+#performance .contentExpanded, #moreRatings .contentExpanded{position:absolute; top:200px; width:765px; left:0; padding:0 0 0 25px; background-color:#f9fafa; background-image:url("/etc/designs/bst/clientlibs/legacy/img/tireDetails/expanderShadow.jpg"); background-repeat:repeat-x; }
+ 
+/*#performance .contentExpanded{height: 700px;}*/
+ 
+#performance .contentExpanded > div, #moreRatings > div > div {width:305px; height:85px; padding-top:20px; float:left; margin-left: 11px;}
+ 
+#performance .contentExpanded abbr, #moreRatings abbr {float:left; color:#4d4d4f; font-size:3em; line-height:0.8em; width:39px;}
+#moreRatings abbr { display: none; }
+ 
+#performance .contentExpanded span, #moreRatings span {float:left; margin:10px 0 0 10px; font-family:"alternate-gothic-no-3-d",sans-serif; text-transform:uppercase; font-size:0.9em; color:#4d4d4f;}
+ 
+#performance .contentExpanded .valueBar, #moreRatings .valueBar {float:left; margin:-3px 0 0 48px; clear:left; width:180px; height:20px; background-color:#edeeee;}
+#moreRatings .valueBar { margin: 10px 0 0 10px; }
+ 
+#performance .contentExpanded .valueBar .bar, #moreRatings .valueBar .bar {float:left; padding:1px 0 0 10px; height:19px; color:#fff; font-family:"alternate-gothic-no-3-d",sans-serif;  text-transform:uppercase; font-size:0.9em;}
+ 
+#performance .contentExpanded .valueBar .Good, #moreRatings .valueBar .Good {width:60px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#879dce', endColorstr='#6d7fa6') !important; /* for IE */ background: -webkit-gradient(linear, left top, left bottom, from(#879dce), to(#6d7fa6)) !important; /* for webkit browsers */  background: -moz-linear-gradient(top,  #879dce,  #6d7fa6) !important; /* for firefox 3.6+ */}
+ 
+#performance .contentExpanded .valueBar .Better, #moreRatings .valueBar .Better{width:120px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6076b3', endColorstr='#4e6092') !important; /* for IE */    background: -webkit-gradient(linear, left top, left bottom, from(#6076b3), to(#4e6092)) !important; /* for webkit browsers */   background: -moz-linear-gradient(top,  #6076b3,  #4e6092) !important; /* for firefox 3.6+ */}
+ 
+#performance .contentExpanded .valueBar .Best, #moreRatings .valueBar .Best {width:180px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e4d79', endColorstr='#323e61') !important; /* for IE */   background: -webkit-gradient(linear, left top, left bottom, from(#3e4d79), to(#323e61)) !important; /* for webkit browsers */   background: -moz-linear-gradient(top,  #3e4d79,  #323e61) !important; /* for firefox 3.6+ */}
+ 
+ 
+#features.expander{float: left; height: auto; overflow: visible; position: inherit;}
+ 
+#features.expander h3{position:relative;}
+ 
+#features h2{float:none !important; font-fmaily: "Helvetica",sans-serif; margin:0px; font-size: 1.5em;}
+ 
+#features .contentBoxes{border-left: thin solid #C1C2C2; float: right; font-size: 0.7em; padding-left: 20px; padding-right: 18px; position: static !important; width: 550px;}
+ 
+#features p{margin:2px 0 19px 0;}
+ 
+ 
+#questions .contentBoxes{border-left: thin solid #C1C2C2; float: right; font-size: 0.7em; padding-left: 20px; padding-right: 18px; }
+#productDetailsExpanded #questions.expander h3 {top:0;}
+#productDetailsExpanded #questions.expander .contentBoxes {top: 26px;}
+#productDetailsExpanded #questions.expander .contentBoxes a {margin-top: 20px; display: block;}
+#productDetailsExpanded > #questions.expander {height: 120px;}
+ 
+ 
+#additionalFeatures{position:absolute; left:200px; bottom:0px;}
+ 
+#additionalFeatures div{height:140px; width:170px; padding:0 0 0 20px; float:left; border-left:thin solid #c1c2c2;}
+ 
+#eco{float: left; overflow:visible !important; height:auto !important;}
+ 
+#eco .contentBoxes{border-left: thin solid #C1C2C2; float: right; font-size: 0.7em; padding-left: 20px; padding-right: 18px; position: static !important; width: 550px; margin-top:48px; padding-bottom:15px;}
+ 
+#eco h3{ left: 20px; position: relative; top: 32px;}
+ 
+#eco img {position: absolute; top: 116px; left: 20px;}
+ 
+#eco .globalBtn {float: left; margin-top: 27px;}
+ 
+#callOuts{float: right; margin-top: 36px; margin-right:20px; width: 270px;}
+ 
+#tirePressureModal p{margin:15px 8px; padding:0; font-size:0.8em;}
+ 
+#tirePressureModal table{margin:0 0 0 8px;}
+ 
+#tirePressureModal th{font-family:"alternate-gothic-no-3-d",sans-serif; font-size:0.9em; text-align:left; font-weight:normal; padding-bottom:8px;}
+ 
+#tirePressureModal td{color:#4d4d4f; font-weight:bold; text-align:left; font-size:0.9em;}
+ 
+#tirePressureModal span{color: #4D4D4F; display: block; font-size: 1.3em; padding: 9px 0 0;}
+ 
+#tirePressureModal .finePrint{width:500px !important;}
+ 
+.es #tirePressureModal{width:601px;}
+ 
+#bridgestoneBrands{position:absolute; left:0px; top:64px; border-bottom:3px solid #dddede;}
+ 
+#firestoneBrands{position:absolute; left:0px; top:364px;}
+ 
+#speedModal table{position:absolute; left:0px; top:60px;}
+ 
+#brandModal{height: 624px;}
+ 
+#speedModal{height:373px;}
+ 
+#printModal{width:470px;}
+ 
+#printModal p{color:#000;}
+ 
+#printModal label{padding-left:5px; color:#58585a; margin-top:10px;}
+ 
+#printModal input[type='radio']{margin-top:15px;}
+ 
+#printModal input[type='text']{width:38px;}
+ 
+#printModal em{font-style: normal; font-size:0.8em; color:#212121;}
+ 
+ 
+/* Webkit and Chrome only */
+@media screen and (-webkit-min-device-pixel-ratio:0) { #speedModal{height:431px;}}
+ 
+#tirePressureModal{height:320px;}
+ 
+.lt-ie10  #speedModal{height:431px;}
+ 
+#sizesModal {height: 582px; width:550px;}
+ 
+.lt-ie9 #sizesModal {height: 575px;}
+ 
+.es #sizesModal{height:589px;}
+ 
+.lt-ie10 .es #sizesModal {height: 582px;}
+ 
+.lt-ie9 .es #sizesModal {height: 616px;}
+ 
+.lt-ie8 .es #sizesModal {height: 610px;}
+ 
+.fr #sizesModal {height: 597px;}
+ 
+.lt-ie10 .fr #sizesModal {height: 595px;}
+ 
+.lt-ie9 .fr #sizesModal {height: 620px;}
+ 
+#sizesModal table {position:absolute; left:0px; top: 300px;}
+ 
+.es #sizesModal table, .fr #sizesModal table {top:300px;}
+ 
+.lt-ie9 .es #sizesModal table, .lt-ie9 .fr #sizesModal table {top:330px;}
+ 
+#sizesModal img{padding: 11px 0 0 7px;}
+ 
+#sizesModal p{font-size: 0.9em; margin: 16px 0 0 9px; width: 498px;}
+ 
+#speedModal .letter, #sizesModal .letter{font-weight:bold; color:#000;}
+ 
+#brandModal table, #speedModal table, #sizesModal table{width:100%; font-size:0.9em;}
+ 
+#sizesModal table{position:absolute; left:0px; top:300px;}
+ 
+.lt-ie9 #brandModal table, .lt-ie9  #speedModal table, .lt-ie9 #sizesModal table {margin-top:-5px; margin-left: 5px;}
+ 
+.lt-ie8 #brandModal table, .lt-ie8  #speedModal table, .lt-ie8 #sizesModal table {margin-left: 0;}
+ 
+#brandModal table .brand{font-family:"alternate-gothic-no-3-d",sans-serif; text-transform:uppercase; font-size:1.3em; color:#000 !important; padding-right:13px;}
+ 
+#sizesModal .letter{color: #000000 !important; font-family: "alternate-gothic-no-3-d",sans-serif; font-size: 1em; font-weight: normal !important; height: 35px; padding: 10px 0 10px 27px; text-align: left; vertical-align: "middle"; text-transform: uppercase;}
+ 
+#sizesModal table td{color: #555555; font-size: 0.8em; font-weight: normal !important; height: 35px; padding: 10px 27px 10px 27px; text-align: left;}
+ 
+#brandModal table td, #speedModal table td{height:25px; padding-top:5px; padding-right:0 !important; color:#555555; text-align:left; padding-left:15px;}
+ 
+#brandModal .odd, #speedModal .odd, #sizesModal .odd{background-color:#e4e6e6;}
+ 
+#brandModal table th,#speedModal table th{height:39px; font-weight:bold; border-bottom:2px solid #dddede; text-align:left; padding-left:15px;}
