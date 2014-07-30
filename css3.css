@@ -1,0 +1,479 @@
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+/* fuel calculator base */
+#fuelCalculatorPage #bd  { padding-bottom:150px; } 
+ 
+#fuelCalculatorPage h1  { font-size: 3em; font-style: normal; color:black; width:790px; margin:0 auto 0.65em auto; } 
+ 
+#savingsWizard  { position:relative; height:500px; } 
+ 
+#savingsWizardModal { left:auto; margin-left:auto; top:auto; padding:0; height:500px; } 
+ 
+#savingsWizard h1  { font-size: 3em; font-style: normal; color:black; width:790px; margin:0 auto 0.65em auto; } 
+ 
+#savingsWizard fieldset  { position:relative; width:447px; height:450px; padding:25px 40px 25px 303px; margin:0 auto; background:#f1f2f2 url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/pattern.gif") left top; color:#555555; }
+ 
+#savingsWizard fieldset legend  { display:block; position:absolute; top:0; left:0; height:500px; width:247px; background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/stepSprite.png") left top no-repeat; overflow:hidden; }
+ 
+.es #savingsWizard fieldset legend, .fr #savingsWizard fieldset legend {background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/stepSprite_es.png") left top no-repeat;}
+ 
+#savingsWizard fieldset legend abbr  { position:absolute; top:18px; left:11px; height:500px; width:247px; line-height:26px; font-size: 6em; color:#6a8a21; } 
+ 
+#savingsWizard fieldset legend h2  { position:absolute; top:36px; left:15px; padding:0; margin:0; font-size:3em; line-height:1.1em; color:#FFF; } 
+ 
+.es #savingsWizard fieldset legend h2, .fr #savingsWizard fieldset legend h2 {font-size: 2.8em}
+ 
+.no-js #savingsWizard fieldset legend h2  { font-size:2.5em; } 
+ 
+#savingsWizard fieldset legend span  { display:none; visibility:hidden; } 
+ 
+#savingsWizard .back  { position:absolute; top:0; left:247px; height:18px; width:18px; overflow:hidden; z-index:10; } 
+ 
+#savingsWizard .back img  { position:absolute; top:0; left:0; } 
+ 
+#savingsWizard #vehicle legend  { background-position: 0px 0px; } 
+ 
+#savingsWizard #gas legend  { background-position: 0px -502px; } 
+ 
+#savingsWizard #savings legend  { background-position: 0px -1004px; } 
+ 
+#savingsWizard #recap legend  { background-position: 0px -1506px; } 
+ 
+#savingsWizard fieldset h4  { margin:0 0 4px 0; font-family:Helvetica, Arial, sans-serif; font-weight:bold !important; font-size:.875em; text-transform:none; color:#555; } 
+ 
+#savingsWizard fieldset h4 + p  { margin:0 0 1.5em 0; font-family:Helvetica, Arial, sans-serif; font-size:.75em; width:75%; color:#555; } 
+ 
+#savingsWizard fieldset .field, #savingsWizard fieldset .flip  { font-family:"alternate-gothic-no-3-d",sans-serif; font-size:1.375em; color:#555; line-height:1em; } 
+ 
+#savingsWizard button  { position:absolute; top:380px; left:650px; } 
+ 
+.es #savingsWizard button {left: 637px;}
+ 
+.fr #savingsWizard button {left: 611px;}
+ 
+#savingsWizard button.globalBtn.disabled, #savingsWizard button.globalBtn:disabled  { background-color:#CCC; } 
+ 
+.lt-ie9 #savingsWizard .globalBtn.disabled { background-color:#CCC; } 
+ 
+#savingsWizard p.footnote  { position:absolute; bottom:25px; left:304px; width:425px; font-size:8.5px; } 
+ 
+#savingsWizard .tooltip { width:275px; padding:10px; font-size:12px; } 
+ 
+ 
+ 
+/* multi content is content in the html divided by spans, selected by a parent class name */
+#savingsWizard .multiContent span  { display:none; } 
+ 
+#savingsWizard .multiContent span:first-child  { display:inline; } 
+ 
+.dueler #savingsWizard .multiContent span  { display:inline; } 
+ 
+.dueler #savingsWizard .multiContent span:first-child  { display:none; } 
+ 
+ 
+ 
+/* vehicle frame */
+#savingsWizard #vehicle div.field  { word-spacing:0; letter-spacing:0; } 
+ 
+#savingsWizard #vehicle label  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; width:209px; height:117px; margin:0 10px 10px 0; padding:0; } 
+ 
+#savingsWizard #vehicle label em  { display:block; width:209px; height:117px; background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/vehicleTypeSprite.png"); text-indent:-10000px; overflow:hidden; -moz-opacity:.50; filter:alpha(opacity=50); opacity:0.50; }
+ 
+.es #savingsWizard #vehicle label em {background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/vehicleTypeSprite_es.png");}
+ 
+.fr #savingsWizard #vehicle label em {background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/vehicleTypeSprite_fr.png");}
+ 
+#savingsWizard #vehicle label input[type=radio]  { position:absolute; top:-10000px; left:-10000px; visibility:hidden; } 
+ 
+/*
+This has been replaced with a jQuery fade.
+#savingsWizard #vehicle label input[type=radio].checked + em,
+#savingsWizard #vehicle label input[type=radio]:checked + em  { -moz-opacity:1; filter:alpha(opacity=100); opacity:1; } 
+*/
+ 
+#savingsWizard #vehicle #sedan em  { background-position:0 0; } 
+ 
+#savingsWizard #vehicle #minivan em  { background-position:-219px 0; } 
+ 
+#savingsWizard #vehicle #suv em  { background-position:0 -127px; } 
+ 
+#savingsWizard #vehicle #pickup em  { background-position:-219px -127px; } 
+ 
+ 
+ 
+/* gas frame */
+#savingsWizard #gas .field  { margin-top:0.5em; } 
+ 
+#savingsWizard #gas label  { display:block; padding:20px 10px; border-bottom:1px solid #DEDEDE; cursor:pointer; } 
+ 
+#savingsWizard #gas label:first-child  { border-top:1px solid #DEDEDE; } 
+ 
+#savingsWizard #gas label abbr  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; width:50px; height:60px; line-height:60px; margin-right:16px; text-align:center; vertical-align:center; font-size:60px; color:#6a8a21; } 
+ 
+#savingsWizard #gas label span  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; position:relative; top:-10px; margin-left:20px; vertical-align:text-top; font-family:Helvetica, Arial, sans-serif; font-weight:bold; font-size:13px; } 
+ 
+#savingsWizard #gas label input[type=text]  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; /*float:right;*/    margin-left:42px; width:100px; font-size:2em; color:#AAA; text-align:center; vertical-align:top; }
+ 
+.es #savingsWizard #gas label input[type=text] {margin-left: 30px;}
+ 
+.ca #savingsWizard #gas label input[type=text] {margin-left: 36px;}
+ 
+#savingsWizard input::-webkit-input-placeholder  { color: #dcddde; text-align:center; } 
+ 
+#savingsWizard input:-moz-placeholder  { color: #dcddde; } 
+ 
+#savingsWizard #gas label#price input[type=text]  { width:135px; } 
+ 
+.touch #savingsWizard #gas label input { border:1px solid #CCC; border-radius:0; padding:0 !important; margin-left:67px; width:75px; }
+ 
+.touch #savingsWizard #gas label#price input { width:110px; margin-left:67px; }
+ 
+ 
+ 
+ 
+/* Canada Specific Styles for GAS section */
+.ca #savingsWizard #mpg span, #savingsWizard.ca #mpg span, .lt-ie10 #savingsWizard #mpg span  {margin-left: 10px;}
+ 
+.fr #savingsWizard #mpg span, .es #savingsWizard #mpg span {width: 160px; margin-right: 35px;}
+ 
+.es #savingsWizard #price span {width: 160px;}
+ 
+ 
+/* savings frame */
+#savingsWizard #savings  { width:480px; padding:25px 40px 25px 270px; } 
+ 
+#savingsWizard #savings h4, 
+#savingsWizard #savings h4 + p  { width:260px; margin-left:220px; } 
+ 
+#savingsWizard #savings .flip  { margin-top:100px; padding:0 0 0 36px; } 
+ 
+#savingsWizard #savings .flip .currency  { margin:0 0 5px -36px; } 
+ 
+ 
+/* recap frame */
+#savingsWizard #recap  { width:473px; padding:25px 40px 25px 277px; } 
+ 
+#savingsWizard #savings .image,
+#savingsWizard #recap .image  { position:absolute; top:0; left:247px; } 
+ 
+#savingsWizard #recap button  { top: 420px; left: 608px;} 
+ 
+.lt-ie10 #savingsWizard #recap button {overflow: visible;}
+ 
+#savingsWizard #recap p.multiContent  { width:265px; margin: 0 0 1.5em 208px; padding:0; font-family: Helvetica, Arial, sans-serif; font-size: .75em; } 
+ 
+#savingsWizard #recap .header  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; margin:40px 0 0 0; padding:0; width:215px; } 
+ 
+#savingsWizard #recap .header p  { width:90%; } 
+ 
+#savingsWizard #recap .currency  { margin:0 0 5px -18px; padding:0; } 
+ 
+#savingsWizard #recap .flip  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; font-size:1em; padding:0 0 0 18px; width:232px } 
+ 
+#savingsWizard #recap .filters label  { color:#999; font-size:12px; } 
+ 
+#savingsWizard #recap .filters .field  { height:30px; width:120px; border-left:none; border-right:thin solid #CCC; } 
+ 
+#savingsWizard #recap .filters .field select { width:110px; }
+ 
+#savingsWizard #recap .filters .year { width:80px; }
+ 
+#savingsWizard #recap .filters .trim { border:none; }
+ 
+#savingsWizard #recap .filters .year select,
+#savingsWizard #recap .filters label.disabled span { width:70px; }
+ 
+#savingsWizard #recap .filters { font-size:12px; }
+ 
+#savingsWizard #recap .filters label { color:#555; }
+ 
+#savingsWizard #recap .filters label.disabled span { color:#555; }
+ 
+#savingsWizard #recap .filters select {}
+ 
+ 
+/* currency (recap page has 1/2-scale flip numbers) */
+#savingsWizard .currency span[data-hide="true"],
+#savingsWizard .currency sub[data-hide="true"],
+#savingsWizard #recap .currency span[data-hide="true"],
+#savingsWizard #recap .currency sub[data-hide="true"]  { display:none; visibility:hidden; } 
+ 
+#savingsWizard .currency span, 
+#savingsWizard .currency sup  { vertical-align:top; } 
+ 
+#savingsWizard .currency span  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; position:relative; width:99px; height:116px; margin-right:6px; line-height:116px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; font-size:100px; text-align:center; color:#FFF; background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/flipLarge.png") left top no-repeat; z-index:1; }
+ 
+#savingsWizard .currency span:before  { content:""; display:block; position:absolute; top:55px; left:1px; width:97px; height:3px; border-top:1px solid #DEDEDE; border-bottom:2px solid #DEDEDE; background:#FFF; z-index:5; } 
+ 
+#savingsWizard .currency span.currencyGlyph,
+#savingsWizard .currency span.decimalGlyph  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; position:relative; width:28px; height:40px; line-height:40px; font-family:Helvetica, Arial, sans-serif; font-style:normal; font-weight:bold; font-size:40px; color:#555; background:none; } 
+ 
+#savingsWizard .currency span.decimalGlyph  { width:16px; height:80px; line-height:80px; color:#a6ce38; text-indent:-10000px; overflow:hidden; background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/decimal.png") center 50px no-repeat; }
+ 
+#savingsWizard .currency .currencyGlyph:before,
+#savingsWizard .currency .decimalGlyph:before,
+#savingsWizard #recap .currency .currencyGlyph:before,
+#savingsWizard #recap .currency .decimalGlyph:before  { display:none; } 
+ 
+#savingsWizard .currency sup,
+#savingsWizard #recap .currency span  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; position:relative; top:1px; width:48px; height:56px; margin-right:4px; line-height:56px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; font-size:50px; text-align:center; color:#FFF; background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/flipSmall.png") left top no-repeat; z-index:1; }
+ 
+#savingsWizard .currency sup:before,
+#savingsWizard #recap .currency span:before  { content:""; display:block; position:absolute; top:26px; left:1px; width:46px; height:3px; border-top:1px solid #DEDEDE; border-bottom:1px solid #DEDEDE; background:#FFF; z-index:5; } 
+ 
+#savingsWizard #recap .currency span.currencyGlyph,
+#savingsWizard .currency sup.currencyGlyph,
+#savingsWizard #recap .currency span.decimalGlyph  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; position:relative; width:14px; height:20px; line-height:20px; font-family:Helvetica, Arial, sans-serif; font-style:normal; font-weight:bold; font-size:20px; color:#555; background:none; } 
+ 
+#savingsWizard #recap .currency span.decimalGlyph  { width:8px; height:40px; line-height:40px; color:#a6ce38; text-indent:0px; } 
+ 
+ 
+#savingsWizard #recap .currency sup  { display: inline-block; float:none; clear:none; *display: inline; *zoom:1; position:relative; top:1px; width:24px; height:28px; line-height:28px; font-family:Helvetica, Arial, sans-serif; font-weight:bold; font-size:25px; text-align:center; color:#FFF; background:url("/etc/designs/bst/clientlibs/legacy/img/fuelCalculator/flipTiny.png") left top no-repeat; z-index:1; }
+ 
+#savingsWizard #recap .currency sup:before  { content:""; display:block; position:absolute; top:13px; left:0px; width:24px; height:1px; border-bottom:1px solid #DEDEDE; background:#FFF; z-index:5; } 
+ 
+/* modal support */
+.modal { width:auto; } 
+ 
+.modal #savingsWizard div.field,
+.modal #savingsWizard div.field label,  
+.modal #savingsWizard div.field input,  
+.modal #savingsWizard div.field select { margin:0; }
