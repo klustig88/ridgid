@@ -1,0 +1,439 @@
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+/*------------------------------------------------------------*/
+/*----- Global -----------------------------------------------*/
+/*------------------------------------------------------------*/
+.rating {
+    text-indent: -9999px;
+    background: url("/etc/designs/bst/clientlibs/legacy/img/starsTireCatalog.png") 0 0 no-repeat;
+}
+ 
+ 
+/*------------------------------------------------------------*/
+/*----- Catalog ----------------------------------------------*/
+/*------------------------------------------------------------*/
+#products .rating {position: absolute; top: 115px; width: 80px; height: 14px;}
+#products .rating.one {background-position: 0 -20px;}
+#products .rating.two {background-position: 0 -40px;}
+#products .rating.three {background-position: 0 -60px;}
+#products .rating.four {background-position: 0 -80px;}
+#products .rating.five {background-position: 0 -100px;}
+ 
+#products .item .rating {right: 9px;}
+#products .itemFeatured .rating {left: 25px;}
+ 
+#catalogPage .quicklook .ratingReviews {margin: 0 0 12px -2px; overflow: hidden;}
+ 
+#catalogPage .quicklook .rating {float: left; width: 140px; height: 25px; background-position: 0 -240px;}
+#catalogPage .quicklook .rating.one {background-position: 0 -270px;}
+#catalogPage .quicklook .rating.two {background-position: 0 -300px;}
+#catalogPage .quicklook .rating.three {background-position: 0 -330px;}
+#catalogPage .quicklook .rating.four {background-position: 0 -360px;}
+#catalogPage .quicklook .rating.five {background-position: 0 -390px;}
+ 
+#catalogPage .quicklook .reviews {display: block; float: left; margin: 12px 0 0 6px; font-size: 11px; color: #50c1e9; text-decoration: none;}
+ 
+ 
+/*------------------------------------------------------------*/
+/*----- Tire Details - Product Intro -------------------------*/
+/*------------------------------------------------------------*/
+#ratingReviews {position: absolute; top: 90px; right: 25px; overflow: hidden;}
+.warmState #ratingReviews {top: 40px;}
+ 
+#ratingReviews .reviews {display: block; float: right; margin: 12px 6px 0 0; font-size: 11px; color: #50c1e9; text-decoration: none; cursor: pointer;}
+ 
+#ratingReviews .rating {float: right; width: 140px; height: 25px; background-position: 0 -240px;}
+#ratingReviews .rating.one {background-position: 0 -270px;}
+#ratingReviews .rating.two {background-position: 0 -300px;}
+#ratingReviews .rating.three {background-position: 0 -330px;}
+#ratingReviews .rating.four {background-position: 0 -360px;}
+#ratingReviews .rating.five {background-position: 0 -390px;}
+ 
+ 
+/*------------------------------------------------------------*/
+/*----- Tire Details - Cutsomer Reviews ----------------------*/
+/*------------------------------------------------------------*/
+#reviews.expander {height: auto;}
+ 
+#reviews .contentDetails {float: left; width: 182px; padding-bottom: 30px;}
+ 
+#reviews .contentDetails h3 {position: static; width: auto; margin: 28px 0 5px 20px; font-size: 28px; text-transform: uppercase;}
+ 
+#reviews .contentDetails h4 {margin: 0 0 51px 20px; font-size: 18px; line-height: 1.1em; text-transform: capitalize;}
+ 
+#reviews .contentDetails p {margin: 0 0 8px 20px; font-size: 11px; color: #414042; line-height: 1.7;}
+ 
+#reviews .contentDetails a {color: #00a9e5;}
+ 
+#reviews .contentDetails a:hover {text-decoration: underline;}
+ 
+#reviews .averageRating {position: relative; margin-bottom: 14px;}
+ 
+#reviews .averageRating h4 {margin-bottom: 0;}
+ 
+#reviews .averageRating .rating {width: 140px; height: 25px; margin: 0 0 11px 18px; background-position: 0 -420px;}
+#reviews .averageRating .rating.one {background-position: 0 -450px;}
+#reviews .averageRating .rating.two {background-position: 0 -480px;}
+#reviews .averageRating .rating.three {background-position: 0 -510px;}
+#reviews .averageRating .rating.four {background-position: 0 -540px;}
+#reviews .averageRating .rating.five {background-position: 0 -570px;}
+ 
+#reviews .averageRating .info {
+    position: absolute;
+    top: 38px;
+    left: 162px;
+    width: 14px;
+    height: 14px;
+    background: url("/etc/designs/bst/clientlibs/legacy/img/iconInfo.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+ 
+#reviews .performanceRatings {margin-bottom: 16px; padding: 18px 0 8px; color: #414042; border-top: 1px solid #d9dada; border-bottom: 1px solid #d9dada;}
+ 
+#reviews .performanceRatings .attribute {position: relative; margin: 0 0 10px 19px;}
+ 
+#reviews .performanceRatings h5 {margin: 0; font-size: 16px; line-height: 1; text-transform: capitalize;}
+ 
+#reviews .performanceRatings .reviews {font-size: 10px; line-height: 1;}
+ 
+#reviews .performanceRatings .rating {float: right; width: 80px; height: 14px; background-position: 0 -120px;}
+#reviews .performanceRatings .rating.one {background-position: 0 -140px;}
+#reviews .performanceRatings .rating.two {background-position: 0 -160px;}
+#reviews .performanceRatings .rating.three {background-position: 0 -180px;}
+#reviews .performanceRatings .rating.four {background-position: 0 -200px;}
+#reviews .performanceRatings .rating.five {background-position: 0 -220px;}
+ 
+#reviews .performanceRatings .tooltip {top: -75px; right: auto; width: 270px; padding: 8px 10px 12px;}
+#reviews .performanceRatings .traction .tooltip {top: -90px; width: 385px;}
+#reviews .performanceRatings .comfort .tooltip {top: -60px; width: 270px;}
+ 
+#reviews .contentReviews {float: right; width: 569px; padding: 46px 0 0 18px; border-left: 1px solid #C1C2C2;}
+ 
+#reviews .contentReviews .writeReviewBtn {
+    float: right;
+    position: relative;
+    z-index: 99;
+    width: 103px;
+    margin: 0 23px -20px;
+    padding: 6px 40px 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    background: #00a9e5 url("/etc/designs/bst/clientlibs/legacy/img/iconWrite.png") 126px 4px no-repeat;
+    cursor: pointer;
+}
+ 
+ 
+/*------------------------------------------------------------*/
+/*----- Tire Details - Ratings Info Modal --------------------*/
+/*------------------------------------------------------------*/
+#ratingsInfo {width: 585px; padding-bottom: 18px; font-size: 12px; color: #222;}
+ 
+#ratingsInfo .close {font-size: 2.3em;}
+ 
+#ratingsInfo h3 {margin: 0 0 17px; padding: 17px 0 5px 17px; font-size: 32px; color: #f26e20; border-bottom: 1px solid #dddede;}
+ 
+#ratingsInfo h4 {margin: 0 20px 5px; font: bold 12px "Helvetica",sans-serif; text-transform: none;}
+ 
+#ratingsInfo p {margin: 0 20px 25px; line-height: 1.8;}
+ 
+#ratingsInfo ul {margin: 0 20px; padding: 0; list-style: none;}
+ 
+#ratingsInfo ul li {margin-bottom: 5px; line-height: 1.8;}
+ 
+ 
+/*------------------------------------------------------------*/
+/*----- Tire Details - Write a Review Modal ------------------*/
+/*------------------------------------------------------------*/
+#writeReview {width: 790px; height: 586px; padding-top: 14px; overflow: hidden;}
+ 
+#writeReview .close {font-size: 1.8em; background-color: #898989;}
+ 
+#writeReview .contentDetails {float: left; width: 162px; padding: 0 20px; border-right: 1px solid #c7c8c8;}
+ 
+#writeReview .contentDetails h3 {margin: 28px 0 5px; font-size: 28px; line-height: 1em; text-transform: uppercase;}
+ 
+#writeReview .contentDetails h4 {margin: 0 0 38px; font-size: 18px; line-height: 1.1em; text-transform: capitalize;}
+ 
+#writeReview h5 {margin: 0; font-size: 18px; text-transform: capitalize;}
+ 
+#writeReview p {margin: 0 0 10px; font-size: 12px; line-height: 1.7;}
+ 
+#writeReview .contentDetails p {color: #414042;}
+ 
+#writeReview .contentDetails ul {margin: 0 0 20px; padding: 0 0 0 14px; font-size: 12px;}
+ 
+#writeReview .contentDetails ul li {margin-bottom: 8px; color: #414042; line-height: 1.7;}
+ 
+#writeReview .contentForm {float: right; width: 568px; padding-top: 34px;}
+ 
+#writeReview .contentForm p {margin-bottom: 34px;}
+ 
+#writeReview .contentForm ul.stepNav {height: 30px; margin: 0 0 28px; padding-left: 10px; list-style: none; border-bottom: 1px solid #bababa;}
+ 
+#writeReview .contentForm ul.stepNav li {float: left; width: 74px; height: 25px; padding-top: 4px; font: 18px "alternate-gothic-no-3-d", sans-serif; color: #919191; text-align: center; text-transform: uppercase; background-color: #f2f2f2;}
+ 
+#writeReview .contentForm ul.stepNav li.active {height: 26px; color: #000; border: 1px solid #bababa; border-bottom: none;}
+ 
+#writeReview #step1 {overflow: hidden;}
+ 
+#writeReview #step1 h6 {margin: 0 0 7px; font: bold 12px "Helvetica",sans-serif; color: #2d2d2d;}
+ 
+#writeReview #step1 h6 span {margin-left: 12px; font-size: 11px; font-weight: normal; text-transform: uppercase;}
+ 
+#writeReview #step1 .vehicleInfo {width: 400px; height: 71px; margin-bottom: 28px; padding: 16px 0 0 55px; background-color: #007876;}
+ 
+#writeReview #step1 .vehicleInfo.filters .field {height: 54px; margin: 0; padding: 17px 0 0;}
+ 
+#writeReview #step1 .vehicleInfo.filters .field select, #writeReview #step1 .vehicleInfo.filters .field label {margin: 0;}
+ 
+#writeReview #step1 input[type="text"] {width: 127px; margin-bottom: 28px; border: 1px solid #9e9f9f;}
+ 
+#writeReview #step1 input[type="checkbox"] {margin-right: 5px; font-size: 100%;}
+ 
+#writeReview #step1 ul {float: left; width: 178px; margin: 0 0 33px; padding: 12px 0 0; list-style: none;}
+ 
+#writeReview #step1 ul li {margin-bottom: 10px; font-size: 11px;}
+ 
+#writeReview #step1 button {float: right; margin-right: 20px;}
+ 
+#writeReview #step1 button.close {margin-right: 10px;}
+ 
+#writeReview #step1 button.disabled {background-color: #808285; cursor: default;}
+ 
+#writeReview #step1 button.disabled {background: none; background-color: #808285;}
+ 
+#writeReview #step2 {display: none; position: relative; height: 390px; overflow: scroll;}
+ 
+#writeReview #step2 button.close {position: absolute;}
+ 
+#writeReview #step2 .jspPane {width: 554px !important;}
+ 
+#writeReview .confirmation {display: none; margin-top: 30px; padding: 0 35px 0 86px; background: url("/etc/designs/bst/clientlibs/legacy/img/iconCheck.gif") 3px 0 no-repeat;}
+ 
+#writeReview .confirmation h4 {margin: 0 0 10px; font-size: 22px;}
+ 
+#writeReview .confirmation p {margin: 0 0 12px; font-size: 13px; line-height: 1.6;}
+ 
+#writeReview button.close {position: relative; width: auto; height: auto; padding-left: 10px; font-size: 12px; line-height: 12px; background-color: #808285;}
+ 
+#writeReview button.close:hover {background: none; background-color: #808285;}
